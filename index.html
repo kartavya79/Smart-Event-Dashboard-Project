@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2>🎯 Smart Event Dashboard</h2>
+        <div class="upper-div">
+            <div class="eventform">
+                <h3>Add new Events</h3>
+            <form id="form"><br>
+                <label for="eventTitle">Event Title:</label>
+                <input type="text" id="eventTitle"><br>
+                <label for="eventDate">Event Date:</label>
+                <input type="date" id="eventDate"><br>
+                <label for="category">Category:</label>
+                <select id="category">
+                    <option value="Conference">Conference</option>
+                    <option value="Workshop">Workshop</option>
+                    <option value="Meetup">Meetup</option>
+                    <option value="Webinar">Webinar</option>
+                    <option value="Social">Social</option>
+                </select><br>
+                <label for="description">Description:</label>
+                <textarea id="description"></textarea><br>
+                <button type="submit">Add Event</button>
+            </form>
+            </div>
+            
+            <div class="events">
+                <h3>My Events</h3><br>
+                <button>Clear All Events</button>
+                <button>Add Sample Events</button>
+                <div class="cards">
+
+                </div>
+                
+            </div>
+        </div>
+    <div class="dom">
+    
+        <h3>DOM Manipulation Demo</h3><br>
+        <div class="dom-inner">
+            <p>innerText vs innerHTML vs textContent</p>
+        <div class="dom-text">
+            <p><b>OuterHTML:</b> BoldText strong with spaces</p><br>
+            <p><b>innerHTML:</b> Reading Html tags -> <strong>Bold text</strong> with spaces</p><br>
+            <p><b>innerText:</b> Removes Html,collapses spaces -> Bold text with spaces</p><br>
+            <p><b>textContent:</b> Removes Html,keeps space -> Bold text with spaces</p><br>
+            You pressed: <span class="key"></span>
+        </div>
+        </div>
+    </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
