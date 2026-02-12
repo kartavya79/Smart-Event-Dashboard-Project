@@ -8,7 +8,7 @@ body {
     background: linear-gradient(135deg, #a9c5ff, #7cc4b8);
     padding: 30px;
 }
-h2 {
+h1{
     text-align: center;
     color: white;
     margin-bottom: 30px;
@@ -50,6 +50,13 @@ button{
     color: white;
     cursor: pointer;
 
+}
+.btn1{
+    width: 49%;
+    
+}
+.btn2{
+    width: 50%;
 }
 .container{
     display: flex;
@@ -93,6 +100,15 @@ button{
     align-items: center;
     font-size: 12px;
     cursor: pointer;
+    transition: 0.3s ease;
+    padding: 15px;
+}
+.deleteCard:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+    opacity: 0.9;
+    background-color: #ff6822;
+
 }
 .dom{
     background: white;
@@ -102,18 +118,40 @@ button{
     width: 80%;
 
 }
-.dom-inner{
-    background-color: #c7c7c79f;
-    padding: 12px;  
-    border-radius: 5px;   
-}
-.dom-inner>p{
-    font-weight: bold;
-}
-.dom-text{
-    padding: 10px;
-    background-color: white;
-    border-radius: 5px;
-    border : 1px solid rgb(107, 103, 103);
+
+.cards{
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
 }
 
+.card {
+    background: linear-gradient(135deg,rgb(204, 204, 204),rgb(147, 202, 195));
+    border-radius: 6px;
+    padding: 15px;
+    margin-top: 15px;
+    box-shadow: 0 1px 3px rgba(51, 40, 40, 0.06);
+    position: relative;
+    width: 49%;
+    text-align: start;
+    transition: 0.3s ease-in-out;
+    width: 49%;
+    
+}
+.card:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+    opacity: 0.9;
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+    
+    .events > button {
+        width: 100%;
+        margin-right: 0;
+    }
+}
